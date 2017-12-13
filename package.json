@@ -1,6 +1,6 @@
 {
   "name": "babel7-jest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Jest plugin to use babel 7 for transformation.",
   "main": "build/index.js",
   "scripts": {
@@ -21,5 +21,9 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0-alpha || ^7.0.0-beta || ^7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joselcc/babel7-jest.git"
   }
 }
