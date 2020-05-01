@@ -5,13 +5,15 @@
   "main": "build/index.js",
   "scripts": {
     "build": "babel ./src/index.js --out-file ./build/index.js --presets=@babel/preset-env,@babel/preset-flow",
-    "prepublish": "npm run build"
+    "prepublish": "npm run snyk-protect && npm run build",
+    "snyk-protect": "snyk protect"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "babel-plugin-istanbul": "^5.0.1",
-    "babel-preset-jest": "^21.2.0"
+    "babel-preset-jest": "^21.2.0",
+    "snyk": "^1.316.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.31",
@@ -25,5 +27,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/joselcc/babel7-jest.git"
-  }
+  },
+  "snyk": true
 }
